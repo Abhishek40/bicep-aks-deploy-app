@@ -21,7 +21,7 @@ param agentCount int = 1
 param agentVMSize string = 'standard_d2s_v3'
 
 @description('The user name for the linux virtual machine')
-param linuxAdminUsername string = 'azureUser21'
+param linuxAdminUsername string = 'xxxxxx'
 
 @description('Configure all linux machines with the SSH RSA public key string. Your key should include three parts, for example \'ssh-rsa AAAAB...snip...UcyupgH azureuser@linuxvm\'')
 param sshRSAPublicKey string = 'xxxxxxxxx'
