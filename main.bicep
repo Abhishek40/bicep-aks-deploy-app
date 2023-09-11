@@ -24,7 +24,7 @@ param agentVMSize string = 'standard_d2s_v3'
 param linuxAdminUsername string = 'xxxxxx'
 
 @description('Configure all linux machines with the SSH RSA public key string. Your key should include three parts, for example \'ssh-rsa AAAAB...snip...UcyupgH azureuser@linuxvm\'')
-param sshRSAPublicKey string = 'xxxxxxxxx'
+param sshRSAPublicKey string = 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8vNU1ADsyU+FJ9+pIjPYx0f+p9B4pRmYaEP2EV/4KhUXUm0+MRMGuoEc80y7bcg1P0qw60l+75mLFFbQRDUYuRUqGRE8sgytf+7kORQv6Y2ZnC6/2J7inIeFFJu1cRyczAbgJ9F7VRqLeOAHB+qbG4eO1opV4vwyJ/jRSlRtofoIQGFofePcmr94gqHAsIcfqeKqL7QJFwEW80WTm4vY6PGWMQWJ0J8hKwfevtycLwcpASnI9f1p4LGeIGC1crvR74Sg6jdSeFMSDiliqlt8O8bXAVaIK35UrUrU8CsBsfoxcC6r7Wk8gUAlgHJKMcZFAqwUjJHHrISiU/+CPcwRn0VnTq7/WyIHJ6PU9UMOBHRq6MFUDTrh2JX1xDjEUMN5FO/VD7K0qXNJzLAt3j6Dy6HDg9HF3f7nCDlbmhWbpVJEtmNi4eR208p5iyC+iTGp3gQ+JhLh3a9Zx5Kra5UfB7K3mAiy/nMEZ5xEwSIKFR/h9bCsPp4KbTGMRGMiKrgU= generated-by-azure'
 
 resource aks 'Microsoft.ContainerService/managedClusters@2023-06-01' = {
   name: ClusterName
